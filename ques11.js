@@ -1,0 +1,41 @@
+//Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+//a. First number
+//b. Second number
+//c. Operation (+, -, *, /, %)
+//Compute & show the calculated result to user.
+
+
+var num1=+prompt("Enter the first number");
+var operation=prompt("Enter the operation(+,-,*, / & %)")
+var num2=+prompt("Enter the second number");
+
+var add= num1+num2;
+var sub= num1-num2;
+var mul= num1*num2;
+var div= num1/num2;
+var mod= num1%num2;
+
+if ((num1>=0 || num1<0) && (num2>=0 || num2<0)){
+    if(operation==="+"){
+        alert(num1 + " + " + num2 + " = " + add);
+    }
+
+    else if(operation==="-"){
+        alert(num1 + " + " + num2 + " = " + sub);
+    }
+
+    else if(operation==="*"){
+        alert(num1 + " X " + num2 + " = " + mul);
+    }
+
+    else if(operation==="/"){
+        alert(num1 + " / " + num2 + " = " + div);
+    }
+
+    else if(operation==="%"){
+        alert(num1 + " % " + num2 + " = " + mod);
+    }
+}
+else{
+    alert("Enter a valid number");
+}
