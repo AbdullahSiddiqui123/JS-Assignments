@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script - JS Assignment - Even Odd </title>
+</head>
+<body>
+    
+<pre>
+        var arr = [];
+
+        for (var i = 0; i &lt; 10; i++) {
+            var num2 = +prompt("Enter your number:");
+            arr.push(num2);
+        }
+
+        console.log("Entered numbers:", arr);
+
+        for (var i = 0; i &lt; arr.length; i++) {
+            if (!isNaN(arr[i])) {
+                if (arr[i] % 2 === 0) {
+                    console.log("The number " + arr[i] + " is even");
+                } else {
+                    console.log("The number " + arr[i] + " is odd");
+                }
+            } else {
+                console.log("Invalid number entered at index " + i);
+            }
+        }
+</pre>
+
+
+    
+</body>
+</html>
